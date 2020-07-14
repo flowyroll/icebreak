@@ -1,0 +1,5 @@
+# Data Sampling on MDS-resistant 10th Generation Intel Core (Ice Lake)
+
+Microarchitectural Data Sampling (MDS) is a set of hardware vulnerabilities in Intel CPUs that allows an attacker to sample data loads and stores across various security boundaries. On affected CPUs, these vulnerabilities were patched via microcode updates. Additionally, Intel announced that the newest microarchitectures, namely Cascade Lake and Ice Lake, were not affected by MDS. While Cascade Lake turned out to be vulnerable to the ZombieLoad v2 MDS attack (named TAA by Intel), Ice Lake was not affected by this attack.
+
+This repository contains proof of concepts for a variant of MSBDS (CVE-2018-12126), an MDS attack, also known as Fallout, that works on Ice Lake CPUs. This was discoverred using [Transynther](https://github.com/danielmgmi/medusa/tree/master/Transynther), a framework to find new variants of Meltdown-type attacks. A technical report regarding this finding can be found [here](https://moghimi.org/papers/techreport2020-IceLakeMDS.pdf) and also [here](techreport2020-IceLakeMDS.pdf). 

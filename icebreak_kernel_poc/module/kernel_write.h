@@ -1,0 +1,12 @@
+/* See LICENSE file for license and copyright information */
+
+#ifndef KERNEL_WRITE_MODULE_H
+#define KERNEL_WRITE_MODULE_H
+
+#define KERNEL_WRITE_DEVICE_NAME "kernel_write"
+#define KERNEL_WRITE_DEVICE_PATH "/dev/" KERNEL_WRITE_DEVICE_NAME
+
+#define KERNEL_WRITE_IOCTL_MAGIC_NUMBER (long) 'x'
+#define KERNEL_WRITE_IOCTL_CMD_WRITE_OFFSET_ONCE _IOR(KERNEL_WRITE_IOCTL_MAGIC_NUMBER, 2, size_t)
+
+#endif // KERNEL_WRITE_MODULE_H
